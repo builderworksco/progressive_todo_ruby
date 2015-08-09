@@ -1,9 +1,9 @@
-puts "1.) Buy Milk"
-puts "2.) Buy Cheese"
-puts "3.) Learn Ruby"
-puts "4.) Feed the cats"
-puts "5.) Register for conference (conference)"
-puts "6.) Book hotel (conference)"
-puts "7.) Book flight (conference)"
-puts "8.) Rent a car (conference)"
-puts "9.) Research ninjitsu"
+puts "1.) Buy Milk \n"+
+  "2.) Buy Cheese \n"+
+  "3.) Learn Ruby \n"+
+  "4.) Feed the cats \n"+
+  "5.) Register for conference (conference) \n"+
+  "6.) Book hotel (conference) \n"+
+  "7.) Book flight (conference) \n"+
+  "8.) Rent a car (conference) \n"+
+  "9.) Research ninjitsu"
