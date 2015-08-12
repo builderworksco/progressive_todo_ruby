@@ -13,25 +13,33 @@ Each branch of this app is progressively advanced.
      MMM     "YMMMMMP"  MMMMP"`    "YMMMMMP"
 =end
 
+def print_as_title(title)
+  name = title.to_s # turn the symbol into a string
+  name = name.capitalize # capitalize the word
+  name = name.center(name.length+2, ' ') # add some padding around the word
+  name = name.center(40, '*') # decorate it with stars!
+  puts name
+end
+
+def print_list_item(number, item_text)
+  item_text.capitalize! # capitalize the word in place
+  puts "#{number}.) #{item_text}" # looks like "1.) List item description"
+end
+
 # List of things to do
 lists_by_category = {
   general: ["Buy Milk", "Buy Cheese", "Learn Ruby", "Feed the cats", "Research ninjitsu"],
   conference: ["Register for conference", "Book hotel", "Book flight", "Rent a car"]
 }
 
+print_as_title('My TODO list')
+
 lists_by_category.each do |list_name, list|
 
-  # Let's make this look better (http://ruby-doc.org/core-2.2.0/String.html)
-  name = list_name.to_s # turn the symbol into a string
-  name = name.capitalize # capitalize the word
-  name = name.center(name.length+2, ' ') # add some padding around the word
-  name = name.center(40, '*') # decorate it with stars!
-  puts name
+  print_as_title(list_name)
 
   list.each_with_index do |list_item, index|
-    number = index + 1
-    list_item.capitalize! # capitalize the word in place
-    puts "#{number}.) #{list_item}" # looks like "1.) List item description"
+    print_list_item(index + 1, list_item)
   end
 
   puts "\n"
