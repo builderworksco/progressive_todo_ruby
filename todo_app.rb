@@ -26,15 +26,17 @@ def print_list_item(number, item_text)
   puts "#{number}.) #{item_text}" # looks like "1.) List item description"
 end
 
-# List of things to do
-lists_by_category = {
-  general: ["Buy Milk", "Buy Cheese", "Learn Ruby", "Feed the cats", "Research ninjitsu"],
-  conference: ["Register for conference", "Book hotel", "Book flight", "Rent a car"]
-}
+# Returns a list of things to do. Note the implicit return
+def retrieve_list
+  {
+    general: ["Buy Milk", "Buy Cheese", "Learn Ruby", "Feed the cats", "Research ninjitsu"],
+    conference: ["Register for conference", "Book hotel", "Book flight", "Rent a car"]
+  }
+end
 
 print_as_title('My TODO list')
 
-lists_by_category.each do |list_name, list|
+retrieve_list.each do |list_name, list|
 
   print_as_title(list_name)
 
