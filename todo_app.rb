@@ -21,11 +21,16 @@ lists_by_category = {
 
 lists_by_category.each do |list_name, list|
 
-  puts list_name.to_s
-  puts "============"
+  # Let's make this look better (http://ruby-doc.org/core-2.2.0/String.html)
+  name = list_name.to_s # turn the symbol into a string
+  name = name.capitalize # capitalize the word
+  name = name.center(name.length+2, ' ') # add some padding around the word
+  name = name.center(40, '*') # decorate it with stars!
+  puts name
 
   list.each_with_index do |list_item, index|
     number = index + 1
+    list_item.capitalize! # capitalize the word in place
     puts "#{number}.) #{list_item}" # looks like "1.) List item description"
   end
 
