@@ -1,6 +1,8 @@
-list = ["1.) Buy Milk \n", "2.) Buy Cheese \n", "3.) Learn Ruby \n",
-  "4.) Feed the cats \n", "5.) Register for conference (conference) \n",
-  "6.) Book hotel (conference) \n", "7.) Book flight (conference) \n",
-  "8.) Rent a car (conference) \n", "9.) Research ninjitsu"]
+list = ["1.) Buy Milk", "2.) Buy Cheese", "3.) Learn Ruby",
+  "4.) Feed the cats", "5.) Register for conference (conference)",
+  "6.) Book hotel (conference)", "7.) Book flight (conference)",
+  "8.) Rent a car (conference)", "9.) Research ninjitsu"]
 
-puts list
+list.each do |list_item|
+  puts list_item
+end
