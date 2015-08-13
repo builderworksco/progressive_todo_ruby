@@ -1,4 +1,8 @@
+require_relative '../lib/printers'
+
 class TodoList
+  include Printers
+
   # Returns a list of things to do. Note the implicit return
   def retrieve_list
     {
