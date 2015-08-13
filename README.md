@@ -1,8 +1,8 @@
 # progressive_todo_ruby
 A Ruby todo app written progressively advanced
 
-Branches 1-n: Basic Ruby syntax and the standard library
-Branches n-n: Code organization in classes and modules
+Branches 1-12: Basic Ruby syntax and the standard library
+Branches 13-n: Code organization in classes and modules
 Branches n-n: Refinements, digging deeper with objects
 
 # Helpful links
