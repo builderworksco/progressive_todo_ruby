@@ -11,20 +11,14 @@ class TodoList < Printable
     general = []
     item_order = 1
     ["Buy Milk", "Buy Cheese", "Learn Ruby", "Feed the cats", "Research ninjitsu"].each do |text|
-      item = TodoItem.new
-      item.text = text
-      item.order = item_order
-      general << item
+      general << TodoItem.new(text: text, order: item_order)
       item_order += 1
     end
 
     conference = []
     item_order = 1
     ["Register for conference", "Book hotel", "Book flight", "Rent a car"].each do |text|
-      item = TodoItem.new
-      item.text = text
-      item.order = item_order
-      conference << item
+      conference << TodoItem.new(text: text, order: item_order)
       item_order += 1
     end
 
