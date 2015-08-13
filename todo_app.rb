@@ -14,8 +14,8 @@ Each branch of this app is progressively advanced.
 =end
 
 
-require './lib/printers'
-require './lib/todo_list'
+require_relative 'lib/printers'
+require_relative 'lib/todo_list'
 
 include Printers
 
