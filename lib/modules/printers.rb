@@ -6,9 +6,4 @@ module Printers
     name = name.center(40, '*') # decorate it with stars!
     puts name
   end
-
-  def print_list_item(number, item)
-    text = item.text.capitalize
-    puts "#{number}.) #{text}" # looks like "1.) List item description"
-  end
 end

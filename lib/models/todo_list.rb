@@ -9,17 +9,23 @@ class TodoList < Printable
 
   def generate_list
     general = []
+    item_order = 1
     ["Buy Milk", "Buy Cheese", "Learn Ruby", "Feed the cats", "Research ninjitsu"].each do |text|
       item = TodoItem.new
       item.text = text
+      item.order = item_order
       general << item
+      item_order += 1
     end
 
     conference = []
+    item_order = 1
     ["Register for conference", "Book hotel", "Book flight", "Rent a car"].each do |text|
       item = TodoItem.new
       item.text = text
+      item.order = item_order
       conference << item
+      item_order += 1
     end
 
     {
@@ -35,11 +41,7 @@ class TodoList < Printable
   def print_list
     @list.each do |list_name, list|
       print_as_title(list_name)
-
-      list.each_with_index do |list_item, index|
-        print_list_item(index + 1, list_item)
-      end
-
+      list.map(&:print)
       puts "\n"
     end
   end
