@@ -1,9 +1,7 @@
 require_relative '../../lib/modules/printers'
+require_relative 'printable'
 
-class TodoList
-  include Printers
-
-  # Returns a list of things to do. Note the implicit return
+class TodoList < Printable
   def retrieve_list
     {
       general: ["Buy Milk", "Buy Cheese", "Learn Ruby", "Feed the cats", "Research ninjitsu"],
@@ -11,8 +9,12 @@ class TodoList
     }
   end
 
-  def print_title
-    print_as_title('My TODO list')
+  def title
+    'My TODO list'
+  end
+
+  def print_body
+    print_list
   end
 
   def print_list
@@ -25,10 +27,5 @@ class TodoList
 
       puts "\n"
     end
-  end
-
-  def print
-    print_title
-    print_list
   end
 end
