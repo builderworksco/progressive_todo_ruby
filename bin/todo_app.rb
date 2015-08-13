@@ -14,10 +14,13 @@ Each branch of this app is progressively advanced.
 =end
 
 
-require_relative '../lib/printers'
 require_relative '../lib/todo_list'
 
-include Printers
+class TodoList
+  def print
+    print_list
+  end
+end
 
 list = TodoList.new
 list.print
