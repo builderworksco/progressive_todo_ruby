@@ -13,3 +13,4 @@ Branches n-n: Refinements, digging deeper with objects
 - [Ruby Globals](http://ruby-doc.org/core-2.2.0/doc/globals_rdoc.html)
 - [Basic Syntax](http://ruby-doc.org/core-2.2.0/doc/syntax_rdoc.html)
 - [Assignment](http://ruby-doc.org/core-2.2.0/doc/syntax/assignment_rdoc.html)
+- [Ruby Literals](http://ruby-doc.org/core-2.2.0/doc/syntax/literals_rdoc.html)
