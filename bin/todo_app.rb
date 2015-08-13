@@ -17,5 +17,7 @@ Each branch of this app is progressively advanced.
 require_relative '../lib/models/todo_list'
 require_relative '../lib/models/displayer'
 require_relative '../lib/modules/modifiers'
+require_relative '../lib/models/listener'
 
-Displayer.new(TodoList.new).display
+list = Listener.todo_list
+Displayer.new(list).display
