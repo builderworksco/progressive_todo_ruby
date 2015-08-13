@@ -1,0 +1,15 @@
+{
+  "list": {
+    "title": "My TODO List",
+    "categories": [
+      {
+        "name": "General",
+        "items": ["Buy Milk", "Buy Cheese", "Learn Ruby", "Feed the cats", "Research ninjitsu"]
+      },
+      {
+        "name": "Conference",
+        "items": ["Register for conference", "Book hotel", "Book flight", "Rent a car"]
+      }
+    ]
+  }
+}
