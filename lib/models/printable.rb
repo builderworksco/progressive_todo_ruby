@@ -2,7 +2,6 @@ require_relative '../../lib/modules/printers'
 
 class Printable
   include Printers
-  attr_accessor :title, :body
 
   def print
     print_title

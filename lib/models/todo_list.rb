@@ -1,15 +1,15 @@
 require_relative 'printable'
 
 class TodoList < Printable
-  def initialize
-    @title = 'My TODO list'
-  end
-
   def retrieve_list
     {
       general: ["Buy Milk", "Buy Cheese", "Learn Ruby", "Feed the cats", "Research ninjitsu"],
       conference: ["Register for conference", "Book hotel", "Book flight", "Rent a car"]
     }
+  end
+
+  def title
+    'My TODO list'
   end
 
   def print_body
