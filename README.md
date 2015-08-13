@@ -4,6 +4,9 @@ A Ruby todo app written progressively advanced
 Branches 1-12: Basic Ruby syntax and the standard library
 Branches 13-n: Code organization in classes and modules
 Branches n-n: Refinements, digging deeper with objects
+Branches n-n: Input/output
+Branches n-n: Reading and writing files
+Branches n-n: External dependencies with gems
 
 # Helpful links
 - [Ruby Core](http://ruby-doc.org/core-2.2.0/)
