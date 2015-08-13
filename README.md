@@ -1,6 +1,11 @@
 # progressive_todo_ruby
 A Ruby todo app written progressively advanced.
 
+To run the app run:
+```
+ruby bin/todo_app.rb
+```
+
 For the most part, each branch only contains commits related to a topic or
 documentation updates.
 
