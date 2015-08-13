@@ -1,11 +1,13 @@
 require_relative 'printable'
+require_relative 'writable'
 require_relative 'todo_item'
 require_relative 'todo_category'
 require 'yaml'
 
-class TodoList < Printable
+class TodoList < Writable
   def initialize
     @title = stored_list["title"]
+    @body = list
   end
 
   def list
@@ -21,6 +23,6 @@ class TodoList < Printable
   end
 
   def print_body
-    list.map(&:print)
+    @body.map(&:print)
   end
 end

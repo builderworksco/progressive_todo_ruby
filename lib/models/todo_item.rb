@@ -8,6 +8,10 @@ class TodoItem
   end
 
   def print
-    puts "#{order}.) #{text.capitalize}"
+    puts self.to_s
+  end
+
+  def to_s
+    "#{order}.) #{text.capitalize}\r\n"
   end
 end

@@ -6,6 +6,6 @@ class Displayer
   end
 
   def display
-    @display_object.print
+    @display_object.output
   end
 end

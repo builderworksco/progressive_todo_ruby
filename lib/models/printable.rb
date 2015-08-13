@@ -4,7 +4,7 @@ class Printable
   include Printers
   attr_accessor :title, :body
 
-  def print
+  def output
     print_title
     print_body
   end

@@ -22,4 +22,12 @@ class TodoCategory < Printable
     print_as_title(@name)
     @items.map(&:print)
   end
+
+  def to_s
+    str = @name+"\r\n"
+    @items.each do |item|
+      str += item.to_s
+    end
+    str
+  end
 end
