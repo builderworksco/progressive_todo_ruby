@@ -1,7 +1,7 @@
 require_relative 'printable'
 require_relative 'todo_item'
 require_relative 'todo_category'
-require 'json'
+require 'yaml'
 
 class TodoList < Printable
   def initialize
@@ -10,14 +10,14 @@ class TodoList < Printable
 
   def list
     out = []
-    stored_list["categories"].each do |category|
-      out << TodoCategory.new(category["name"], *category["items"])
+    stored_list["categories"].each do |name, category|
+      out << TodoCategory.new(name, *category["items"])
     end
     out
   end
 
   def stored_list
-    JSON.parse(File.read('data/todo.json'))["list"]
+    YAML.load_file('data/todo.yml')["list"]
   end
 
   def print_body

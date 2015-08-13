@@ -1,0 +1,16 @@
+list:
+  title: My TODO List
+  categories:
+    general:
+      items:
+        - Buy Milk
+        - Buy Cheese
+        - Learn Ruby
+        - Feed the cats
+        - Research ninjitsu
+    conference:
+      items:
+        - Register for conference
+        - Book hotel
+        - Book flight
+        - Rent a car
