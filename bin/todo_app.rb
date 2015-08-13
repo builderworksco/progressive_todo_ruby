@@ -15,7 +15,7 @@ Each branch of this app is progressively advanced.
 
 
 require_relative '../lib/models/todo_list'
+require_relative '../lib/models/displayer'
 require_relative '../lib/modules/modifiers'
 
-list = TodoList.new
-list.print
+Displayer.new(TodoList.new).display
