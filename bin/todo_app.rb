@@ -14,13 +14,7 @@ Each branch of this app is progressively advanced.
 =end
 
 
-require_relative '../lib/todo_list'
-
-class TodoList
-  def print
-    print_list
-  end
-end
+require_relative '../lib/models/todo_list'
 
 list = TodoList.new
 list.print

@@ -1,4 +1,4 @@
-require_relative '../lib/printers'
+require_relative '../../lib/modules/printers'
 
 class TodoList
   include Printers
