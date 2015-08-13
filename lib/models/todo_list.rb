@@ -1,14 +1,30 @@
 require_relative 'printable'
+require_relative 'todo_item'
 
 class TodoList < Printable
   def initialize
     @title = 'My TODO list'
+    @list = generate_list
   end
 
-  def retrieve_list
+  def generate_list
+    general = []
+    ["Buy Milk", "Buy Cheese", "Learn Ruby", "Feed the cats", "Research ninjitsu"].each do |text|
+      item = TodoItem.new
+      item.text = text
+      general << item
+    end
+
+    conference = []
+    ["Register for conference", "Book hotel", "Book flight", "Rent a car"].each do |text|
+      item = TodoItem.new
+      item.text = text
+      conference << item
+    end
+
     {
-      general: ["Buy Milk", "Buy Cheese", "Learn Ruby", "Feed the cats", "Research ninjitsu"],
-      conference: ["Register for conference", "Book hotel", "Book flight", "Rent a car"]
+      general: general,
+      conference: conference
     }
   end
 
@@ -17,7 +33,7 @@ class TodoList < Printable
   end
 
   def print_list
-    retrieve_list.each do |list_name, list|
+    @list.each do |list_name, list|
       print_as_title(list_name)
 
       list.each_with_index do |list_item, index|

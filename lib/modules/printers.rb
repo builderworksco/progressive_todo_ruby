@@ -7,8 +7,8 @@ module Printers
     puts name
   end
 
-  def print_list_item(number, item_text)
-    item_text.capitalize! # capitalize the word in place
-    puts "#{number}.) #{item_text}" # looks like "1.) List item description"
+  def print_list_item(number, item)
+    text = item.text.capitalize
+    puts "#{number}.) #{text}" # looks like "1.) List item description"
   end
 end
