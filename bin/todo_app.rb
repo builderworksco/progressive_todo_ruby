@@ -17,7 +17,5 @@ Each branch of this app is progressively advanced.
 require_relative '../lib/models/todo_list'
 require_relative '../lib/modules/modifiers'
 
-using Modifiers
-
 list = TodoList.new
 list.print
