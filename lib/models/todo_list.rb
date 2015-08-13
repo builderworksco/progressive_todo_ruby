@@ -4,10 +4,10 @@ require_relative 'todo_item'
 require_relative 'todo_category'
 require 'yaml'
 
-class TodoList < Printable
-  def initialize(categories)
+class TodoList < Writable
+  def initialize
     @title = stored_list["title"]
-    @body = categories || list
+    @body = list
   end
 
   def list
