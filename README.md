@@ -9,6 +9,7 @@ Branches n-n: Reading and writing files
 Branches n-n: External dependencies with gems
 
 # Helpful links
+- [Installation Guide](https://www.ruby-lang.org/en/documentation/installation/)
 - [Ruby Core](http://ruby-doc.org/core-2.2.0/)
 - [Ruby Kernel](http://ruby-doc.org/core-2.2.0/Kernel.html)
 - [Ruby Object](http://ruby-doc.org/core-2.2.0/Object.html)
