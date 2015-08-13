@@ -11,8 +11,8 @@ documentation updates.
 
 master: the final product
 Branches 1-12: Basic Ruby syntax and the standard library
-Branches 13-n: Code organization in classes and modules
-Branches n-n: Refinements, digging deeper with objects
+Branches 13-16: Code organization in classes and modules
+Branches 17-n: Refinements, digging deeper with objects
 Branches n-n: Input/output
 Branches n-n: Reading and writing files
 Branches n-n: External dependencies with gems
