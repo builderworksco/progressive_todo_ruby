@@ -1,4 +1,3 @@
-require_relative '../../lib/modules/printers'
 require_relative 'printable'
 
 class TodoList < Printable

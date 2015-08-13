@@ -1,3 +1,5 @@
+require_relative '../../lib/modules/printers'
+
 class Printable
   include Printers
 
