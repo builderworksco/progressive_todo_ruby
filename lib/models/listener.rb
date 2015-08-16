@@ -19,7 +19,7 @@ class Listener
   def self.listen_for_list(list_prompt, pad_prompt)
     list = []
     puts list_prompt.center(list_prompt.length+pad_prompt, '-')
-    while (input = gets) && input.chr != "\u0004"
+    while input = gets
       input.chomp!
       puts list_prompt.center(list_prompt.length+pad_prompt, '-')
       list << input
