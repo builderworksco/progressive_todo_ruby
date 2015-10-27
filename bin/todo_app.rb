@@ -15,9 +15,22 @@ Each branch of this app is progressively advanced.
 
 
 require_relative '../lib/printers'
+require_relative '../lib/errors'
 require_relative '../lib/todo_list'
+require 'io/console'
 
 include Printers
+include CustomErrors
 
-list = TodoList.new
-list.print
+begin
+  @list = TodoList.new
+  @list.print
+rescue NoUnimportantTasksError => error
+  puts 'Would you really like to ignore some items?'
+  if STDIN.getch == 'y'
+    @list.items = TodoList.remove_ignore_items(@list)
+  else
+    @list.items = TodoList.unignore_items(@list)
+  end
+  @list.print
+end

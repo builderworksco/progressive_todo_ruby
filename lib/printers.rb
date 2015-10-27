@@ -8,6 +8,7 @@ module Printers
   end
 
   def print_list_item(number, item_text)
+    raise NoUnimportantTasksError.new if item_text.include? 'ignore'
     item_text.capitalize! # capitalize the word in place
     puts "#{number}.) #{item_text}" # looks like "1.) List item description"
   end
